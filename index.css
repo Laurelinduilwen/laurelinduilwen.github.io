@@ -35,6 +35,7 @@ background-attachment: local;
 background-repeat: no-repeat;
 background-origin: content-box, padding-box;
 background-size: cover;
+background-position: right top;
 padding: 1px;
 margin: -1px;
 }
@@ -55,5 +56,5 @@ ul.navibarul {
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-origin: content-box, padding-box;
-background-size: auto;
+background-size: cover;
 }
