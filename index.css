@@ -34,7 +34,7 @@ background-image: url("https://i.imgur.com/RZipbfW.jpg");
 background-attachment: local;
 background-repeat: no-repeat;
 background-origin: content-box, padding-box;
-background-size: auto;
+background-size: cover;
 padding: 1px;
 margin: -1px;
 }
