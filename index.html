@@ -2,33 +2,92 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Travel webpage</title>
-        <style> body {background-color:black;}
-            p {color: gold; 
-               width: 90%;}
-            h1 {color: white;}
-            h2 {color: red;}
-            h3 {color: rgb(12, 201, 53);}
-            ul {color:rgb(12, 156, 43);}
+        <title>Project: What is a Paladin?</title>
+    <style>
+        
+        body{background-color:black;}
 
-#navibar {background: rgb(255, 255, 219);
-  position: fixed;
-  top: 0%;
-  bottom: 0%;
-  left: 90%;
-  width: 10%;
+p {color: gold; 
+  width: 90%;}
+            
+h1 {color: white; 
+font-size: 70px}
+            
+h2 {color: red;}
+            
+h3 {color: rgb(12, 201, 53);}
+            
+li.topbar {float: left;
+border-right:1px solid #bbb;
 }
+li.topbar a {display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+li.topbar a:hover {
+  background-color: #F58CBA	;
+}
+
+#titleimage {width:20%;}
+
+#title {
+height: 300px;
+background-image: url("https://i.imgur.com/RZipbfW.jpg");
+background-attachment: relative;
+background-repeat: no-repeat;
+background-origin: content-box, padding-box;
+background-size: 1538px;
+padding: 1px;
+margin: -1px;
+}
+
+ul.navibarul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  
+  }
+
+#maincontent {background-image: url("https://i.imgur.com/weqAcUf.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-origin: content-box, padding-box;
+background-size: auto;
+}
+        
         </style>
         
     </head>
     <body>
-    
-        <h1>Travel to Silvermoon City</h1>
-        
-        <img src="https://upload.wikimedia.org/wikipedia/lv/a/a1/Asins_elfi.jpg" alt="blood elf male and female" width="50%" height="50%">
+    <div id="title">
+        <h1>The Light and How to Swing It</h1>
         <p><strong>Selama ashal'anore!</strong></p>
+      </div>  
+      
+      <div id="navibar">
+       <ul class="navibarul">
+       <li class="topbar"> <a href="#shepardsgate">Home</a></li>
+      <li class="topbar"><a href="#walkofelders">Info</a></li> 
+        <li class="topbar"><a href="#thebazaar">Retribution </a></li>
+         <li class="topbar"><a href="#thebazaar">Protection</a></li>
+         <li class="topbar"><a href="#thebazaar">Holy</a></li> 
+         <li class="topbar"><a href="#thebazaar">Forums</a></li>
+      <li class="topbar"><a href="#thebazaar">Discord </a></li>
+        </ul>
+             
+         </div>
+     
         
-        <h2>About Silvermoon City</h2>
+       <div id="maincontent"> 
+        <h2>What is a Paladin?</h2>
         
         <p>The crown jewel of the blood elves is their capital of <strong>Silvermoon City</strong> (aka Silvermoon), nestled in the Eversong Woods in their ancestral lands of Quel'Thalas. At the northernmost tip of the Eastern Kingdoms the beauty of the spires and thoroughfares of Silvermoon stand in stark contrast to the Dead Scar, the tainted path that Arthas tore through the city in his quest for power. Though nearly destroyed by Arthas' attack on the Sunwell, Silvermoon is once again a thriving city. Most recently, the rebirth of the Sunwell has lifted spirits among the elves, and they have continued to heal Silvermoon's scars in the hopes of returning their beloved capital to its former glory, the western half of it still being in ruins since the Third War. </p>
         
@@ -42,20 +101,7 @@
 <h2>Geography</h2>
 <p>The inhabited half of the city is arranged into separate but linked areas that each carry a unique feel.</p>
 
-<div id="navibar">
-<ul>
-    <li> <a href="#shepardsgate">The Shepherd's Gate</a></li>
-<li><a href="#walkofelders">Walk of Elders</a></li> 
-<li><a href="#thebazaar">The Bazaar </a></li>
-<li>The Royal Exchange</li>
-<li>Murder Row</li> 
-<ul>
-<li>The Sanctum </li></ul>
-<li>Farstriders' Square </li>
-<li>Court of the Sun </li>
-<ul><li>Sunfury Spire</li>
-<ul><li>Inner Sanctum</li></ul></ul> </ul>
-</div>
+
     
  <h3 id="shepardsgate">The Shepherd's Gate</h3>
  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Car_bed_kap2.jpg/600px-Car_bed_kap2.jpg" alt="some gate" width="250">
@@ -79,8 +125,12 @@ Though the Shepherd's Gate holds the distinction of being the only practical ent
 <p>Outside, a colossal fountain neatly nestles itself in the center of the Bazaar, while a gathered crowd on the far-western zone tends to two dissidents, whose anti-magisters rhetoric takes a conspicuous change in tone after one such magister casts a spell on the pair. Conjurer Tyren also begins his rounds in the Bazaar, lighting up the sky with several magical indulgences.</p>
 
 <p>Also of wry amusement in the Bazaar is the Keelen's Trustworthy Tailoring shop, whose neat work appears to be a dubiously kind front after visiting the leper gnomes employed beneath its main lounge. Silvermoon Finery is on hand for any cloth-related needs a sin'dorei may have.</p>
+      </div>
     
-          <iframe src="https://discordapp.com/widget?id=217703551466602498&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+          <iframe id="discord" src="https://discordapp.com/widget?id=217703551466602498&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+      
+      
+       <img id="titleimage" src="https://upload.wikimedia.org/wikipedia/lv/a/a1/Asins_elfi.jpg" alt="blood elf male and female">
         
     </body>
 </html>
