@@ -4,8 +4,9 @@ background-repeat: no-repeat;
 background-origin: content-box, padding-box;
 background-size: cover;}
 
-p {color: gold; 
-  width: 98%;}
+p {color: beige; 
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 95%;}
             
 ul {overflow: visible;}
 
@@ -21,14 +22,21 @@ ul.navibarul {
   
   }
 
-
-
 h1 {color: white; 
-font-size: 70px}
+font-size: 5em;
+padding: 0.1em;
+margin: 0.7em;
+font-family: 'Libre Baskerville', serif;
+text-shadow: 7px 7px 9px #F58CBA;}
             
-h2 {color: red;}
+h2 {color: #F58CBA; font-size: 2.7em;
+font-family: 'Libre Baskerville', serif;
+text-shadow: 1.5px 1.5px 2px black;}
+
             
-h3 {color: #F58CBA;}
+h3 {color: #F58CBA;
+font-family: 'Libre Baskerville', serif;
+text-shadow: 0.5px 0.5px 1px black;}
             
 li.topbar {float: left;
 border-right:1px solid #bbb;
@@ -36,7 +44,7 @@ z-index: 5;
 }
 
 li.topbar a {display: block;
-  color: white;
+  color: beige;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -60,12 +68,12 @@ margin: -1px;
 }
 
 #sidebar {float:right;
-  padding:1px 1.5px 1px 1px;
+  padding: 1px 1.5px 1px 1px;
   margin: 1.2em 0px 0px 0px;
   width: 19%; 
   position: auto;
   z-index: -1;
-  border        : 1px solid grey;
+  border: 1px solid grey;
 }
 #sidebarimage {width:100%; 
     margin: 0px 0px -58px 0px;
@@ -162,6 +170,8 @@ table.stats, th, td {
 width: 80%;
 background-color: rgb(0,0,0,.5);}
 
+.statpriohead {color: #F58CBA;}
+
 .specicon {width:23px;
   margin-right:8px;
   margin-left:0px;
@@ -183,6 +193,11 @@ text-align: center;
 }
 
 #discord {float: right;
-width: 19.5%}
+width: 19.5%;
+  height: 450px;}
+
+#uther {float: left;
+  margin: -10px 8px -400px -90px;
+        width: 110px}
 
 
