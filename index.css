@@ -1,92 +1,155 @@
-body{background-image: url("https://i.imgur.com/weqAcUf.jpg");
+body{
+  background-image: url("https://i.imgur.com/weqAcUf.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-origin: content-box, padding-box;
-  background-size: cover;}
+  background-size: cover;
+  box-sizing: border-box;
+}
 
-p {color: beige;
+p {
+  color: beige;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 1em;
   font-size: 17px;
-  word-spacing: normal;}
+  word-spacing: normal;
+}
+
+p.spec {
+  padding-left: 21.3em;
+}
+
             
-ul {overflow: visible;
+ul {
+  overflow: visible;
   font-family: 'Source Sans Pro', sans-serif;
-  color: beige; margin:0.8em 1em 0.8em 1em; }
+  color: beige; margin:0.8em 1em 0.8em 1em;
+}
 
 ul.navibarul {
   list-style-type: none;
-  margin: 0em -10px 0em -8px;
+  margin: 0em -50px 0em 0px;
   padding: 0;
   overflow: hidden;
   background-color: #333;
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 5;
   font-family: 'Libre Baskerville', serif;
-  font-size:1.15em; font-color:beige;}
+  font-size:1.15em;
+  color:beige;
+}
 
-h1 {color: white;
+h1 {
+  color: white;
   font-size: 5em;
   padding: 0.1em;
   margin: 0.7em;
   font-family: 'Libre Baskerville', serif;
-  text-shadow: 7px 7px 9px #F58CBA;}
+  text-shadow: 7px 7px 9px #F58CBA;
+}
             
-h2 {color: #F58CBA; font-size: 2.7em;
+h2 {
+  color: #F58CBA; font-size: 2.7em;
   font-family: 'Libre Baskerville', serif;
   text-shadow: 1.5px 1.5px 2px black;
-margin: 0.7em 1em 0.7em 1em}
+  margin: 0.7em 1em 0.7em 1em}
+
+.h2s {
+  position:absolute;
+  z-index:-1;
+  margin: 9.2em 0em 0em 1.50em;
+  font-size:32px;
+  font-style:italic;
+}
 
             
-h3 {color: #F58CBA;
+h3 {
+  color: #F58CBA;
   font-family: 'Libre Baskerville', serif;
-  text-shadow: 0.5px 0.5px 1px black;}
+  text-shadow: 0.5px 0.5px 1px black;
+}
 
-h3.inp {text-shadow: 1.5px 1.5px 2px black;}
+h3.inp {
+  text-shadow: 1.5px 1.5px 2px black;
+}
 
-span {font-style: italic;}
+h4 {
+  margin: 2em 0em 2em 28em;
+  color: beige;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  word-spacing: normal;
+}
 
-a:link {color: white;}
-a:visited {color: purple;}
+span {
+  font-style: italic;
+}
 
-span.abilities {font-style: normal;}
+a:link {
+  color: white;
+}
+a:visited {
+  color: purple;
+}
 
-span.abilities a {font-weight:bold; font-family: 'Source Sans Pro', sans-serif; font-size:16px}
+span.abilities {
+  font-style: normal;
+}
 
-span.abilities a:link {text-decoration: none; font-color:white}
-span.abilities a:visited {text-decoration: none; color:white}
+span.abilities a {
+  font-weight:bold; font-family: 'Source Sans Pro', sans-serif; font-size:16px
+}
+
+span.abilities a:link {
+  text-decoration: none;
+  color:white
+}
+
+span.abilities a:visited {
+  text-decoration: none;
+  color:white
+}
 
 /* For neat display of spell abilities, used class so it wont effect regular links and wont break things even if the scipt is commented out */
 
 
            
-li.topbar {float: left;
+li.topbar {
+  float: left;
   border-right:1px solid #bbb;
-  z-index: 5;}
+  z-index: 5;
+}
 
-li.topbar a {display: block;
+li.topbar a {
+  display: block;
   color: beige;
   text-align: right;
   padding: 14px 16px;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 li.topbar a:hover {
   background-color: #F58CBA	;
   outline: 1px solid beige;
-  outline-offset: -1px;}
+  outline-offset: -1px;
+}
 
 li.topbar:last-child {
   border-left:1px solid #bbb;
   border-right:none;
-  text-align: inherit;}
+  text-align: inherit;
+}
 
-#uther {float: left;
+#uther {
+  float: left;
   margin: -11px -9px -400px -20px;
-  width: 110px}
+  width: 110px
+}
 
-#title {height: 300px;
+#title {
   background-image: url("https://i.imgur.com/RZipbfW.jpg");
   background-attachment: local;
   background-repeat: no-repeat;
@@ -95,35 +158,46 @@ li.topbar:last-child {
   background-position: right top;
   box-sizing: border-box;
   padding: 1px;
-  margin: -9px -11px -0px -11px;}
+  width: 100%;
+  margin: -10px -20px 0px 0px;
+  height: 18.8em;
+}
 
-#sidebar {float:right;
+#sidebar {
+  float:right;
   margin: 1.2em 0px 0px 0px;
-  width: 19.5%; 
-  position: auto;
-  z-index: -3;}
+  width: 19%;
+  z-index: -3;
+}
 
-#statstable{box-sizing: border-box;
+#statstable{
+  box-sizing: border-box;
   border: 3px groove #333333;
-  border-radius: 4px;}
+  border-radius: 4px;
+}
 
-#sidebarimage {width:100%; 
+#sidebarimage {
+  width: 100%; 
   margin: 0px 0px -58px 0px;
   z-index: -2;
-  position: relative;}
+  position: relative;
+}
 
-#discord {width: 100%;
+#discord {
+  width: 100%;
   height: 35em;
   margin: 1em 0em 0em 0em;  
   opacity: 1; 
-  border:0px;}
+  border:0px;
+}
 
-/*Wanted to give this transparency but *again* it breaks the stick topbar. Transparency with a negative z index works but breaks the connect button ¯\_(ツ)_/¯   */
+/*Wanted to give this transparency but *again* it breaks the stick topbar. Transparency with a negative z index works but breaks the connect button ¯\_(ツ)_/¯ */
 
-table.stats, th, td {border: 1px solid black;
+table.stats, th, td {
+  border: 1px solid black;
   color: white;
-  text-align: none;
-  border-collapse: collapse;}
+  border-collapse: collapse;
+}
 
 tr.spectable:nth-child(even) {
   background-color: #333633;
@@ -131,31 +205,39 @@ tr.spectable:nth-child(even) {
 
 tr.spectable:nth-child(odd) {
   background-color: #333333;
-  transition: 0.3s background-color;}
+  transition: 0.3s background-color;
+}
 
 tr.spectable:hover {
   background-color: #F58CBA;
   cursor: help;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-user-select: none;}
+  -webkit-user-select: none;
+}
 
 /* Might learn to add tooltips to the cursor here but right now I dont have enough time and it already looks like a pain :p */
 
-.tabbed{float: left;
-  width : 80%;}
+.tabbed{
+  float: left;
+  width : 79%;
+}
 
-.tabbed > input{display : none;}
+.tabbed > input{
+  display : none;
+}
 
 .tabbed > section > h3{
   float: left;
   box-sizing: border-box;
   margin: 0;
   padding: 0.5em 0.5em 0;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 .tabbed > input:first-child + section > h3{
-  padding-left : 1em;}
+  padding-left : 1em;
+}
 
 .tabbed > section > h3 > label{
   display: block;
@@ -169,7 +251,8 @@ tr.spectable:hover {
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-user-select: none;}
+  -webkit-user-select: none;
+}
 
 .tabbed > section > div{
   position: relative;
@@ -182,74 +265,84 @@ tr.spectable:hover {
   border: 3px groove #333333;
   border-radius: 4px;
   box-shadow: 0 0 0.5em rgba(0,0,0,0.0625);
-  background-color: rgb(0,0,0,.6);}
+  background-color: rgb(0,0,0,.6);
+}
 
 .tabbed > input:checked + section > h3{
   position : relative;
-  z-index  : 2;}
+  z-index: 2;}
 
 .tabbed > input:not(:checked) + section > div{
-  display : none;}
+  display : none;
+}
 
 /*Was pretty hard to find any tabbed boxes without js on the internet. I mostly replicated the code and tweaked the style a bit */
 
-.h2s {position:absolute;
-      z-index:-1;
-      margin: 9.2em 0em 0em 1.50em;
-      font-size:32px;
-      font-style:italic;}
 
-.maincontent { 
+
+.maincontent {
   border: 3px groove #333333;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 100%;
   margin: 1.2em 0 5px;
   padding: 0.1em 1em;
   box-shadow: 0 0 0.5em rgba(0,0,0,0.0625);
-  width: 80%;
-  background-color: rgb(0,0,0,.5);}
-
-.statpriohead {color: #F58CBA;}
-
-.specicon {width:23px;
-  margin:0px 8px 0px 0px; 
-float:left;}
-
-.specpicture {float:left;
-margin: 1.3em 0.5em 5em 0.5em;
-width: 30%;
-border: 3px inset #333333;
-border-radius: 4px;}
-
-blockquote {
-background:
-url(https://i.imgur.com/vljDZ6R.png) top center no-repeat,
-url(https://i.imgur.com/ZT6wqT6.png) bottom center no-repeat;
-color: #EEE8AA;
-font-style: italic;
-margin: 30px;
-padding: 30px;
-text-align: center;
+  width: 79%;
+  background-color: rgb(0,0,0,.5);
 }
 
-p.spec {padding-left: 21.3em;}
-p.spec1 {margin: 2em 0em 2em 28em;}
+.statpriohead {
+  color: #F58CBA;
+}
 
-blockquote.specquote {float:right;
-width: 57%;}
+.specicon {
+  width:23px;
+  margin:0px 8px 0px 0px;
+  float:left;
+}
+
+.specpicture {
+  float:left;
+  margin: 1.3em 0.5em 5em 0.5em;
+  width: 30%;
+  border: 3px inset #333333;
+  border-radius: 4px;
+}
+
+.speclist{
+  margin: 0px 0px 8px 0px; font-size: 16px;
+}
+
+blockquote {
+  background:
+    url(https://i.imgur.com/vljDZ6R.png) top center no-repeat,url(https://i.imgur.com/ZT6wqT6.png) bottom center no-repeat;
+  color: #EEE8AA;
+  font-style: italic;
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+blockquote.specquote {
+  float:right;
+  width: 57%;
+}
 
 
 #footer {
-  margin: 2em -0.5em 0em 0em;
-  padding: -1px;
-  width: 101%;
+  margin: 2em 0em 0em 0em;
+  width: 100%;
+  float: left;
   background-color: #333;
   box-sizing: border-box;
-  float: right;}
+  }
 
 
-#adress {margin:1em 1em -0.7em 1em; color:beige; font-size:20px}
+#adress {
+  margin:1em 1em -0.7em 1em; color:beige; font-size:20px
+}
 
-.footerp1 {float:right; margin:-1em 1em 0.8em 1em;}
+#createdby {
+  float:right; margin:-1em 1em 0.8em 1em;
+}
 
