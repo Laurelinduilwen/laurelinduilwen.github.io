@@ -5,6 +5,7 @@ body {
   background-origin: content-box, padding-box;
   background-size: cover;
   box-sizing: border-box;
+  margin: 0;
 }
 
 p {
