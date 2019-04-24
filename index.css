@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url("https://i.imgur.com/weqAcUf.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body{
 
 p {
   color: beige;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 1em;
   font-size: 17px;
   word-spacing: normal;
@@ -19,11 +19,11 @@ p.spec {
   padding-left: 21.3em;
 }
 
-            
 ul {
   overflow: visible;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: beige; margin:0.8em 1em 0.8em 1em;
+  font-family: "Source Sans Pro", sans-serif;
+  color: beige;
+  margin: 0.8em 1em 0.8em 1em;
 }
 
 ul.navibarul {
@@ -37,9 +37,9 @@ ul.navibarul {
   top: 0;
   width: 100%;
   z-index: 5;
-  font-family: 'Libre Baskerville', serif;
-  font-size:1.15em;
-  color:beige;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.15em;
+  color: beige;
 }
 
 h1 {
@@ -47,28 +47,29 @@ h1 {
   font-size: 5em;
   padding: 0.1em;
   margin: 0.7em;
-  font-family: 'Libre Baskerville', serif;
-  text-shadow: 7px 7px 9px #F58CBA;
+  font-family: "Libre Baskerville", serif;
+  text-shadow: 7px 7px 9px #f58cba;
 }
-            
+
 h2 {
-  color: #F58CBA; font-size: 2.7em;
-  font-family: 'Libre Baskerville', serif;
+  color: #f58cba;
+  font-size: 2.7em;
+  font-family: "Libre Baskerville", serif;
   text-shadow: 1.5px 1.5px 2px black;
-  margin: 0.7em 1em 0.7em 1em}
+  margin: 0.7em 1em 0.7em 1em;
+}
 
 .h2s {
-  position:absolute;
-  z-index:-1;
-  margin: 9.2em 0em 0em 1.50em;
-  font-size:32px;
-  font-style:italic;
+  position: absolute;
+  z-index: -1;
+  margin: 9.2em 0em 0em 1.5em;
+  font-size: 32px;
+  font-style: italic;
 }
 
-            
 h3 {
-  color: #F58CBA;
-  font-family: 'Libre Baskerville', serif;
+  color: #f58cba;
+  font-family: "Libre Baskerville", serif;
   text-shadow: 0.5px 0.5px 1px black;
 }
 
@@ -79,7 +80,7 @@ h3.inp {
 h4 {
   margin: 2em 0em 2em 28em;
   color: beige;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 17px;
   word-spacing: normal;
 }
@@ -100,26 +101,26 @@ span.abilities {
 }
 
 span.abilities a {
-  font-weight:bold; font-family: 'Source Sans Pro', sans-serif; font-size:16px
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
 }
 
 span.abilities a:link {
   text-decoration: none;
-  color:white
+  color: white;
 }
 
 span.abilities a:visited {
   text-decoration: none;
-  color:white
+  color: white;
 }
 
 /* For neat display of spell abilities, used class so it wont effect regular links and wont break things even if the scipt is commented out */
 
-
-           
 li.topbar {
   float: left;
-  border-right:1px solid #bbb;
+  border-right: 1px solid #bbb;
   z-index: 5;
 }
 
@@ -132,24 +133,24 @@ li.topbar a {
 }
 
 li.topbar a:hover {
-  background-color: #F58CBA	;
+  background-color: #f58cba;
   outline: 1px solid beige;
   outline-offset: -1px;
 }
 
 li.topbar:last-child {
-  border-left:1px solid #bbb;
-  border-right:none;
+  border-left: 1px solid #bbb;
+  border-right: none;
   text-align: inherit;
 }
 
 #uther {
   float: left;
   margin: -11px -9px -400px -20px;
-  width: 110px
+  width: 110px;
 }
 
-#title {
+header {
   background-image: url("https://i.imgur.com/RZipbfW.jpg");
   background-attachment: local;
   background-repeat: no-repeat;
@@ -163,21 +164,21 @@ li.topbar:last-child {
   height: 18.8em;
 }
 
-#sidebar {
-  float:right;
+aside {
+  float: right;
   margin: 1.2em 0px 0px 0px;
   width: 19%;
   z-index: -3;
 }
 
-#statstable{
+#statstable {
   box-sizing: border-box;
   border: 3px groove #333333;
   border-radius: 4px;
 }
 
 #sidebarimage {
-  width: 100%; 
+  width: 100%;
   margin: 0px 0px -58px 0px;
   z-index: -2;
   position: relative;
@@ -186,14 +187,17 @@ li.topbar:last-child {
 #discord {
   width: 100%;
   height: 35em;
-  margin: 1em 0em 0em 0em;  
-  opacity: 1; 
-  border:0px;
+  margin: 1em 0em 0em 0em;
+  border: 3px groove #333333;
+  opacity: 0.9;
+  border-radius: 5px;
 }
 
-/*Wanted to give this transparency but *again* it breaks the stick topbar. Transparency with a negative z index works but breaks the connect button ¯\_(ツ)_/¯ */
+/*Wanted to give this transparency but *again* it breaks the stick topbar. Opacity with a negative z index works but breaks the connect button ¯\_(ツ)_/¯ edit: IT WORKS!!11  */
 
-table.stats, th, td {
+table.stats,
+th,
+td {
   border: 1px solid black;
   color: white;
   border-collapse: collapse;
@@ -201,7 +205,8 @@ table.stats, th, td {
 
 tr.spectable:nth-child(even) {
   background-color: #333633;
-  transition: 0.3s background-color;}
+  transition: 0.3s background-color;
+}
 
 tr.spectable:nth-child(odd) {
   background-color: #333333;
@@ -209,7 +214,7 @@ tr.spectable:nth-child(odd) {
 }
 
 tr.spectable:hover {
-  background-color: #F58CBA;
+  background-color: #f58cba;
   cursor: help;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -218,16 +223,16 @@ tr.spectable:hover {
 
 /* Might learn to add tooltips to the cursor here but right now I dont have enough time and it already looks like a pain :p */
 
-.tabbed{
+.tabbed {
   float: left;
-  width : 79%;
+  width: 79%;
 }
 
-.tabbed > input{
-  display : none;
+.tabbed > input {
+  display: none;
 }
 
-.tabbed > section > h3{
+.tabbed > section > h3 {
   float: left;
   box-sizing: border-box;
   margin: 0;
@@ -235,28 +240,28 @@ tr.spectable:hover {
   font-weight: bold;
 }
 
-.tabbed > input:first-child + section > h3{
-  padding-left : 1em;
+.tabbed > input:first-child + section > h3 {
+  padding-left: 1em;
 }
 
-.tabbed > section > h3 > label{
+.tabbed > section > h3 > label {
   display: block;
   padding: 0.25em 0.75em;
   border: 3px groove #333333;
   border-bottom: none;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  box-shadow: 0 0 0.5em rgba(0,0,0,0.0625);
-  background-color: rgb(0,0,0,.6);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+  background-color: rgb(0, 0, 0, 0.6);
   cursor: pointer;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
 }
 
-.tabbed > section > div{
+.tabbed > section > div {
   position: relative;
-  z-index : 1;
+  z-index: 1;
   float: right;
   box-sizing: border-box;
   width: 100%;
@@ -264,21 +269,20 @@ tr.spectable:hover {
   padding: 0.5em 0.75em;
   border: 3px groove #333333;
   border-radius: 4px;
-  box-shadow: 0 0 0.5em rgba(0,0,0,0.0625);
-  background-color: rgb(0,0,0,.6);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
-.tabbed > input:checked + section > h3{
-  position : relative;
-  z-index: 2;}
+.tabbed > input:checked + section > h3 {
+  position: relative;
+  z-index: 2;
+}
 
-.tabbed > input:not(:checked) + section > div{
-  display : none;
+.tabbed > input:not(:checked) + section > div {
+  display: none;
 }
 
 /*Was pretty hard to find any tabbed boxes without js on the internet. I mostly replicated the code and tweaked the style a bit */
-
-
 
 .maincontent {
   border: 3px groove #333333;
@@ -286,37 +290,38 @@ tr.spectable:hover {
   box-sizing: border-box;
   margin: 1.2em 0 5px;
   padding: 0.1em 1em;
-  box-shadow: 0 0 0.5em rgba(0,0,0,0.0625);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.0625);
   width: 79%;
-  background-color: rgb(0,0,0,.5);
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .statpriohead {
-  color: #F58CBA;
+  color: #f58cba;
 }
 
 .specicon {
-  width:23px;
-  margin:0px 8px 0px 0px;
-  float:left;
+  width: 23px;
+  margin: 0px 8px 0px 0px;
+  float: left;
 }
 
-.specpicture {
-  float:left;
+.spec-picture {
+  float: left;
   margin: 1.3em 0.5em 5em 0.5em;
   width: 30%;
   border: 3px inset #333333;
   border-radius: 4px;
 }
 
-.speclist{
-  margin: 0px 0px 8px 0px; font-size: 16px;
+.speclist {
+  margin: 0px 0px 8px 0px;
+  font-size: 16px;
 }
 
 blockquote {
-  background:
-    url(https://i.imgur.com/vljDZ6R.png) top center no-repeat,url(https://i.imgur.com/ZT6wqT6.png) bottom center no-repeat;
-  color: #EEE8AA;
+  background: url(https://i.imgur.com/vljDZ6R.png) top center no-repeat,
+    url(https://i.imgur.com/ZT6wqT6.png) bottom center no-repeat;
+  color: #eee8aa;
   font-style: italic;
   margin: 30px;
   padding: 30px;
@@ -324,10 +329,9 @@ blockquote {
 }
 
 blockquote.specquote {
-  float:right;
+  float: right;
   width: 57%;
 }
-
 
 #footer {
   margin: 2em 0em 0em 0em;
@@ -335,14 +339,16 @@ blockquote.specquote {
   float: left;
   background-color: #333;
   box-sizing: border-box;
-  }
-
+}
 
 #adress {
-  margin:1em 1em -0.7em 1em; color:beige; font-size:20px
+  margin: 1em 1em -0.7em 1em;
+  color: beige;
+  font-size: 20px;
 }
 
 #createdby {
-  float:right; margin:-1em 1em 0.8em 1em;
+  float: right;
+  margin: -1em 1em 0.8em 1em;
 }
 
