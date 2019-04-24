@@ -1,139 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Project: The Light & How to Swint It</title>
-    <link rel="stylesheet" type="text/css" href="index.css"> 
-    <!--Included this since I am also trying to host this over in my git @ https://laurelinduilwen.github.io/ -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-    <script src="https://wow.zamimg.com/widgets/power.js"></script>
-    <!--I had some extra time so did a little research about providing spell tooltips. Cant believe how easy it is to provide spell links via digging into the wowhead api... I know that the assignment says ignore js and I dont have any idea about it yet but this is neat :3 The script can be easily commented out without causing any side effects or messing with the layout  -->
-  </head>
-  <body>
-    <div id="title">
-      <h1>The Light & <br> How to Swing It</h1>
-      
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: The Light & How to Swint It</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <!--Included this since I am also trying to host this over in my git @ https://laurelinduilwen.github.io/ -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <script>
+    var whTooltips = {
+      colorLinks: true,
+      iconizeLinks: true,
+      renameLinks: true
+    };
+  </script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
+  <!--I had some extra time so did a little research about providing spell tooltips. Cant believe how easy it is to provide spell links via digging into the wowhead api... I know that the assignment says ignore js and I dont have any idea about it yet but this is neat :3 The script can be easily commented out without causing any side effects or messing with the layout  -->
+</head>
+
+<body>
+  <header>
+    <h1>The Light & <br> How to Swing It</h1>
+
+  </header>
+  <ul class="navibarul">
+    <li class="topbar"> <a href="#title">Home</a></li>
+    <li class="topbar"><a href="#wowsetting">Info</a></li>
+    <li class="topbar"><a href="#specializations">Specializations</a></li>
+    <li class="topbar"><a href="https://i.imgur.com/SETtVmB.jpg">Forums </a></li>
+    <li class="topbar"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Search</a></li>
+    <li class="topbar"><a href="#footer">About</a></li>
+    <li class="topbar" style="float:right"><a href="#discord"> <img id="uther" src="https://i.imgur.com/u9nNnuJ.gif" alt="uther the lightbringer">Join our Discord!</a></li>
+
+  </ul>
+  <!--It took *enough* time to figure out how to properly make this sticky navigation bar -_- for some reason using <div>, <nav> or any other container other than <body> breaks the sticky property... I will get back to this later :( update: seems like this is how it is supposed to work, I am finally giving up  ¯\_(ツ)_/¯-->
+  <aside>
+    <div id="statstable">
+      <h2 class="h2s"> Stat Priority</h2>
+      <img id="sidebarimage" src="https://i.imgur.com/gnTIRIw.jpg" alt="paladin riding a horse">
+      <table class="stats">
+        <thead>
+          <tr>
+            <th class="statpriohead">Retribution</th>
+            <th class="statpriohead">Protection</th>
+            <th class="statpriohead"> Holy</th>
+
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr class="spectable">
+            <td>1- Haste</td>
+            <td>1- Armor</td>
+            <td>1- Intellect</td>
+
+          </tr>
+          <tr class="spectable">
+            <td>2- Strength</td>
+            <td>2- Leech</td>
+            <td>2- Mastery</td>
+
+          </tr>
+          <tr class="spectable">
+            <td>3- Critical Strike</td>
+            <td>3- Avoidance</td>
+            <td>3- Critical Strike</td>
+
+          </tr>
+          <tr class="spectable">
+            <td>4- Versatility</td>
+            <td>4- Versatility</td>
+            <td>4- Versatility</td>
+
+          </tr>
+          <tr class="spectable">
+            <td>5- Mastery</td>
+            <td>5- Mastery</td>
+            <td>5- Leech</td>
+
+          </tr>
+          <tr class="spectable">
+            <td>6- Leech</td>
+            <td>6- Haste</td>
+            <td>6- Haste</td>
+
+          </tr>
+          <tr class="spectable">
+            <td>7- Avoidance</td>
+            <td>7- Critical Strike</td>
+            <td>7- Avoidance</td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
     </div>
-    <ul class="navibarul">
-      <li class="topbar"> <a href="#title">Home</a></li>
-      <li class="topbar"><a href="#wowsetting">Info</a></li>
-      <li class="topbar"><a href="#specializations">Specializations</a></li>
-      <li class="topbar"><a href="https://i.imgur.com/SETtVmB.jpg">Forums </a></li>
-      <li class="topbar"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Search</a></li>
-      <li class="topbar"><a href="#footer">About</a></li>
-      <li class="topbar" style="float:right"><a href="#discord"> <img id="uther" src="https://i.imgur.com/u9nNnuJ.gif" alt="uther the lightbringer">Join our Discord!</a></li>
-      
-    </ul>
-    <!--It took *enough* time to figure out how to properly make this sticky navigation bar -_- for some reason using div, nav or any other container breaks the sticky property... I will get back to this later :( update: seems like this is how it is supposed to work, I am finally giving up  ¯\_(ツ)_/¯-->
-    <div id="sidebar">
-      <div id="statstable"> <h2 class="h2s"> Stat Priority</h2>
-        <img id="sidebarimage" src="https://i.imgur.com/gnTIRIw.jpg" alt="paladin riding a horse">
-        <table class="stats">
-          <thead>
-            <tr>
-              <th class="statpriohead">Retribution</th>
-              <th class="statpriohead">Protection</th>
-              <th class="statpriohead"> Holy</th>
-              
-            </tr>
-            
-          </thead>
-          <tbody>
-            <tr class="spectable">
-              <td>1- Haste</td>
-              <td>1- Armor</td>
-              <td>1- Intellect</td>
-              
-            </tr>
-            <tr class="spectable">
-              <td>2- Strength</td>
-              <td>2- Leech</td>
-              <td>2- Mastery</td>
-              
-            </tr>
-            <tr class="spectable">
-              <td>3- Critical Strike</td>
-              <td>3- Avoidance</td>
-              <td>3- Critical Strike</td>
-              
-            </tr>
-            <tr class="spectable">
-              <td>4- Versatility</td>
-              <td>4- Versatility</td>
-              <td>4- Versatility</td>
-              
-            </tr>
-            <tr class="spectable">
-              <td>5- Mastery</td>
-              <td>5- Mastery</td>
-              <td>5- Leech</td>
-              
-            </tr>
-            <tr class="spectable">
-              <td>6- Leech</td>
-              <td>6- Haste</td>
-              <td>6- Haste</td>
-              
-            </tr>
-            <tr class="spectable">
-              <td>7- Avoidance</td>
-              <td>7- Critical Strike</td>
-              <td>7- Avoidance</td>
-              
-            </tr>
-            
-          </tbody>
-          
-        </table>
-        
-      </div>
-      <!--The sidebar is pretty pointless, just throwing stat priorities here because the assignment requires tables. Lots of premium space in the sidebar, if this was a real website it could  be used for forum integration or linking to different kinds of content. Maybe a gameplay guides section linking to different sites but again time is of the essence... ONWARD!-->
-      <div>
-        <iframe id="discord"  src="https://discordapp.com/widget?id=217703551466602498&theme=dark"> </iframe>
-        
-      </div>
-      
+    <!--The sidebar is pretty pointless, just throwing stat priorities here because the assignment requires tables. Lots of premium space in the sidebar, if this was a real website it could  be used for forum integration or linking to different kinds of content. Maybe a gameplay guides section linking to different sites but again time is of the essence... ONWARD!-->
+    <div>
+      <iframe id="discord" src="https://discordapp.com/widget?id=217703551466602498&theme=dark"> </iframe>
+
     </div>
+
+  </aside>
+  <article>
     <div class="maincontent">
       <h2>What is a Paladin?</h2>
       <!--I would die if I dont include *the meme* here https://www.youtube.com/watch?v=thuh3dnCrkU / Okay I swear that I will resist the temptation to include more memes ;) -->
-      <p class="sec1"> The Paladin (alternatively sometimes called Templar or Crusader) is a staple character class found in computer and pen and paper role-playing games. The template may have been introduced through the eponymous character class from Dungeons & Dragons. The broad concept is that of a "Holy Warrior", combining aspects of both Warrior and Cleric.</p>
-      <p class="sec1">The Warrior aspect is typically patterned after the fictionalized chivalric image of a knight-errant in shining armor from the high middle ages or renaissance period.
-The religious aspect harkens back to the historical Paladins' purported role as the bodyguards or right-hand men of Charlemagne, the Protector of Christianity; or alternatively to the religious background of the crusaders, especially Knightly Orders such as the Knights Templar, Knights Hospitallers or the Teutonic Knights.</p>
-      <blockquote> Remember always that in the end, you may find truth within yourself, not from without. That is what we have learned about the Inner Light.<br> Warriors of light are not perfect.Their beauty lies in accepting this fact and still desiring to grow and to learn.</blockquote>
-      <p class="sec1">In game terms, a Paladin is thus typically a Warrior character first and foremost, proficient with heavy arms and armor. Yet at the same time a Paladin is gifted with blessings or magical capabilities such as healing, protection, and countering evil magic (including undead), albeit to a lesser degree than a true priest or cleric. Their outlook would typically be that of a militant defender of faith, sometimes crossing over into cleric, missionary, zealot, or inquisitor territory.</p>
-      <p class="sec1"> In addition, compared to other classes the paladin class has one of the most restrictive codes of conduct in their single-mindedness and utter devotion to good. Paladin characters are expected to demonstrate and embody goodness. In some editions[vague] it was taboo for a paladin to lie or use poison, and some interpretations say they should only use stealth as a last resort. Other restrictions are sometimes laid on the paladin depending on campaign setting, ranging from restricting the class to the point of making it comically unplayable to a class that only differs from other warrior classes in its additional divine powers. Failure to maintain a lawful good alignment or adhere to the code of conduct causes paladins to lose their paladin status and many of their special abilities until they are able to atone.</p>
-      <p class="sec1">In the medieval chanson de geste cycle of the Matter of France, the paladins or Twelve Peers are the twelve foremost knights of Charlemagne's court, comparable to the Knights of the Round Table in Arthurian romance. They represent the valour of Christian chivalry against the Saracen invasion of Europe. Their most notable appearance is in The Song of Roland, narrating the heroic death of Roland at the Battle of Roncevaux Pass.</p>
-      <p class="sec1">The historical nucleus of the legendary material of the "Matter of France" cycle is the Umayyad invasion of Gaul and the subsequent conflict between the Frankish Empire and the Emirate of Córdoba in the Marca Hispanica. The term paladin is from Old French, ultimately from Latin palātīnus, the title given to the closest retainers of the Roman emperors.</p>
-      
+      <p> The Paladin (alternatively sometimes called Templar or Crusader) is a staple character class found in computer and pen and paper role-playing games. The template may have been introduced through the eponymous character class from Dungeons & Dragons.
+        The broad concept is that of a "Holy Warrior", combining aspects of both Warrior and Cleric.</p>
+      <p>The Warrior aspect is typically patterned after the fictionalized chivalric image of a knight-errant in shining armor from the high middle ages or renaissance period. The religious aspect harkens back to the historical Paladins' purported role as
+        the bodyguards or right-hand men of Charlemagne, the Protector of Christianity; or alternatively to the religious background of the crusaders, especially Knightly Orders such as the Knights Templar, Knights Hospitallers or the Teutonic Knights.</p>
+      <blockquote> Remember always that in the end, you may find truth within yourself, not from without. That is what we have learned about the Inner Light.<br> Warriors of light are not perfect.Their beauty lies in accepting this fact and still desiring to grow
+        and to learn.</blockquote>
+      <p>In game terms, a Paladin is thus typically a Warrior character first and foremost, proficient with heavy arms and armor. Yet at the same time a Paladin is gifted with blessings or magical capabilities such as healing, protection, and countering
+        evil magic (including undead), albeit to a lesser degree than a true priest or cleric. Their outlook would typically be that of a militant defender of faith, sometimes crossing over into cleric, missionary, zealot, or inquisitor territory.</p>
+      <p> In addition, compared to other classes the paladin class has one of the most restrictive codes of conduct in their single-mindedness and utter devotion to good. Paladin characters are expected to demonstrate and embody goodness. In some editions[vague]
+        it was taboo for a paladin to lie or use poison, and some interpretations say they should only use stealth as a last resort. Other restrictions are sometimes laid on the paladin depending on campaign setting, ranging from restricting the class
+        to the point of making it comically unplayable to a class that only differs from other warrior classes in its additional divine powers. Failure to maintain a lawful good alignment or adhere to the code of conduct causes paladins to lose their
+        paladin status and many of their special abilities until they are able to atone.</p>
+      <p>In the medieval chanson de geste cycle of the Matter of France, the paladins or Twelve Peers are the twelve foremost knights of Charlemagne's court, comparable to the Knights of the Round Table in Arthurian romance. They represent the valour of
+        Christian chivalry against the Saracen invasion of Europe. Their most notable appearance is in The Song of Roland, narrating the heroic death of Roland at the Battle of Roncevaux Pass.</p>
+      <p>The historical nucleus of the legendary material of the "Matter of France" cycle is the Umayyad invasion of Gaul and the subsequent conflict between the Frankish Empire and the Emirate of Córdoba in the Marca Hispanica. The term paladin is from
+        Old French, ultimately from Latin palātīnus, the title given to the closest retainers of the Roman emperors.</p>
+
     </div>
     <div class="maincontent">
       <h2 id="wowsetting">Paladins in the Warcraft Setting</h2>
-      <p class="sec2">This is the call of the paladin: <span>to protect the weak, to bring justice to the unjust, and to vanquish evil from the darkest corners of the world. </span>These holy warriors are equipped with plate armor so they can confront the toughest of foes, and the blessing of the Light allows them to heal wounds and, in some cases, even restore life to the dead. Ready to serve, paladins can defend their allies with sword and shield, or they can wield massive two-handed weapons against their enemies. The Light grants paladins additional power against the undead and demons, ensuring that these profane beings corrupt the world no longer.</p>
-      <p class="sec2">  You might say that paladins are the guardians at the gates of hell -- they fight evil wherever it penetrates into their world and they take the fight to the evil's source in the hope of quenching it forever. Although they focus on guarding their people from undead and demonic forces on the rise, paladins actually stand against evil everywhere, including the evil in their own hearts. Paladins are not only zealots, but also guardians of the righteous, and they bestow blessings on those the Light would shine upon. The Light radiates from paladins, and worthy allies who stand near them are emboldened by its power.</p>
-      <p class="sec2">Being a paladin means that you have a relationship of some sort with the Holy Light, that mysterious force of goodness and faith that flows to some degree within all living beings with positive intentions. Most paladins (and many priests) believe that when you do something that you believe to be good, the power of the Light increases in you and your connection to the rest of creation is strengthened, whereas doing something evil (such as acts of greed, despair, or vengeance) will darken the universe and weaken your connection to it. Whether this belief system is a religion or a philosophy is open to interpretation, and seems to depend in some part upon which race you are.</p>
-      <blockquote> In all things, paladins must reflect the Light, which supplements our strength. To strive to be divine for one of our kind does not mean we strive for godhood--we strive to be good in all actions. Although called upon to smite evil in these harsh times, you must always remember that it's aiding others that will truly set you apart from the other citizens. Compassion, patience, bravery--these things mean as much to a paladin as strength in battle </blockquote>
-      <p class="sec2">As <span>warriors of the Holy Light</span>, paladins uphold all that is good and true in the world and revile all that is evil and sinister — especially undead and the Burning Legion. They offer assistance to the beleaguered and smite their enemies with holy fervor. Found in almost every corner of Azeroth fighting the forces of evil and barbarism, these stalwart warriors of faith ceaselessly uphold their vigil against demonic forces. Paladins are the embodiment of good and selfless dedication to the protection of their peoples. They help the innocent and punish the wicked. There are however, also misguided paladins such as those in the Scarlet Crusade that end up doing evil in spite of their claims to follow the Light.</p>
-      <p class="sec2">Humans, draenei, and Ironforge dwarves are the most likely to become paladins, as these races revere the Holy Light. Blood elves known as Blood Knights used to bend the powers of the Light to their will, using a captured Naaru. After events at the Sunwell, they have begun using the Light legitimately by siphoning it from their revered Sunwell. The paladin order, also called the Knights of the Silver Hand, grew out of humanity's culture, and its greatest heroes and fiercest proponents are humans. Ironforge dwarves possess the toughness needed to withstand the onslaught of the paladins' many enemies. High elves rarely become paladins, though this has changed somewhat, as their blood elf brothers and sisters expand the Blood Knight order. Recently, tauren paladins, known as Sunwalkers, have learned to use the power of the sun, much as druids use the power of the moon, making them able to wield the power of Light.</p>
+      <p>This is the call of the paladin: <span>to protect the weak, to bring justice to the unjust, and to vanquish evil from the darkest corners of the world. </span>These holy warriors are equipped with plate armor so they can confront the toughest of
+        foes, and the blessing of the Light allows them to heal wounds and, in some cases, even restore life to the dead. Ready to serve, paladins can defend their allies with sword and shield, or they can wield massive two-handed weapons against their
+        enemies. The Light grants paladins additional power against the undead and demons, ensuring that these profane beings corrupt the world no longer.</p>
+      <p> You might say that paladins are the guardians at the gates of hell -- they fight evil wherever it penetrates into their world and they take the fight to the evil's source in the hope of quenching it forever. Although they focus on guarding their
+        people from undead and demonic forces on the rise, paladins actually stand against evil everywhere, including the evil in their own hearts. Paladins are not only zealots, but also guardians of the righteous, and they bestow blessings on those
+        the Light would shine upon. The Light radiates from paladins, and worthy allies who stand near them are emboldened by its power.</p>
+      <p>Being a paladin means that you have a relationship of some sort with the Holy Light, that mysterious force of goodness and faith that flows to some degree within all living beings with positive intentions. Most paladins (and many priests) believe
+        that when you do something that you believe to be good, the power of the Light increases in you and your connection to the rest of creation is strengthened, whereas doing something evil (such as acts of greed, despair, or vengeance) will darken
+        the universe and weaken your connection to it. Whether this belief system is a religion or a philosophy is open to interpretation, and seems to depend in some part upon which race you are.</p>
+      <blockquote> In all things, paladins must reflect the Light, which supplements our strength. To strive to be divine for one of our kind does not mean we strive for godhood--we strive to be good in all actions. Although called upon to smite evil in these harsh
+        times, you must always remember that it's aiding others that will truly set you apart from the other citizens. Compassion, patience, bravery--these things mean as much to a paladin as strength in battle </blockquote>
+      <p class="sec2">As <span>warriors of the Holy Light</span>, paladins uphold all that is good and true in the world and revile all that is evil and sinister — especially undead and the Burning Legion. They offer assistance to the beleaguered and smite their enemies
+        with holy fervor. Found in almost every corner of Azeroth fighting the forces of evil and barbarism, these stalwart warriors of faith ceaselessly uphold their vigil against demonic forces. Paladins are the embodiment of good and selfless dedication
+        to the protection of their peoples. They help the innocent and punish the wicked. There are however, also misguided paladins such as those in the Scarlet Crusade that end up doing evil in spite of their claims to follow the Light.</p>
+      <p>Humans, draenei, and Ironforge dwarves are the most likely to become paladins, as these races revere the Holy Light. Blood elves known as Blood Knights used to bend the powers of the Light to their will, using a captured Naaru. After events at the
+        Sunwell, they have begun using the Light legitimately by siphoning it from their revered Sunwell. The paladin order, also called the Knights of the Silver Hand, grew out of humanity's culture, and its greatest heroes and fiercest proponents are
+        humans. Ironforge dwarves possess the toughness needed to withstand the onslaught of the paladins' many enemies. High elves rarely become paladins, though this has changed somewhat, as their blood elf brothers and sisters expand the Blood Knight
+        order. Recently, tauren paladins, known as Sunwalkers, have learned to use the power of the sun, much as druids use the power of the moon, making them able to wield the power of Light.</p>
       <h3 class="inp">Code of Conduct</h3>
-      <p class="sec2">A paladin must be good and will lose all Light-given abilities if he ever willingly commits an evil act. Additionally, the paladin's code requires that he respect legitimate authority, act with honor (not lying, not cheating, not using poison and so forth), help those in need (provided they do not use their help for evil or chaotic ends), and punish those who harm or threaten innocents. While he may adventure with others from different organizations, a paladin will never knowingly associate with evil persons, nor will he continue an association with someone who consistently offends his moral code. A paladin may accept only henchmen, followers or cohorts whose intentions are good. A paladin who violates this code, becomes an ex-paladin, and loses all Light-given abilities until he atones for his violations.</p>
+      <p>A paladin must be good and will lose all Light-given abilities if he ever willingly commits an evil act. Additionally, the paladin's code requires that he respect legitimate authority, act with honor (not lying, not cheating, not using poison and
+        so forth), help those in need (provided they do not use their help for evil or chaotic ends), and punish those who harm or threaten innocents. While he may adventure with others from different organizations, a paladin will never knowingly associate
+        with evil persons, nor will he continue an association with someone who consistently offends his moral code. A paladin may accept only henchmen, followers or cohorts whose intentions are good. A paladin who violates this code, becomes an ex-paladin,
+        and loses all Light-given abilities until he atones for his violations.</p>
       <blockquote>He who fights with monsters should look to it that he himself does not become a monster.<br> When you gaze long into the Abyss, the Abyss also gazes into you.</blockquote>
-      <p class="sec2">Paladins don't always have to work within good or neutral organizations, as seen by the Scarlet Crusade and others — however, they do have to believe they are working for good organizations or have faith that their cause is good and just. A paladin can be evil (as illustrated by Renault Mograine and Arthas before he took up Frostmourne), but as long as they believe their cause to be just, the Light will continue to serve them because wielding the Light is a matter of willpower and faith in one's own ability to do it. Since he felt conflicted, Arthas's ability to use the Light began to wane after he culled Stratholme. He perceived this as the Light choosing to abandon him, which weakened his faith in it further.</p>
-      <p class="sec2">Similarly, the Light cannot be forcibly stripped from a paladin that personally conducts himself in an honorable manner. When Tirion Fordring defended the orc Eitrigg from his fellow humans, he was banished from the Order of the Silver Hand, and a ceremony was performed by Uther the Lightbringer to strip him of his power. However, the ceremony failed, and while Tirion accepted his sentence of exile, he retained his paladin powers.</p>
-      
+      <p>Paladins don't always have to work within good or neutral organizations, as seen by the Scarlet Crusade and others — however, they do have to believe they are working for good organizations or have faith that their cause is good and just. A paladin
+        can be evil (as illustrated by Renault Mograine and Arthas before he took up Frostmourne), but as long as they believe their cause to be just, the Light will continue to serve them because wielding the Light is a matter of willpower and faith
+        in one's own ability to do it. Since he felt conflicted, Arthas's ability to use the Light began to wane after he culled Stratholme. He perceived this as the Light choosing to abandon him, which weakened his faith in it further.</p>
+      <p>Similarly, the Light cannot be forcibly stripped from a paladin that personally conducts himself in an honorable manner. When Tirion Fordring defended the orc Eitrigg from his fellow humans, he was banished from the Order of the Silver Hand, and
+        a ceremony was performed by Uther the Lightbringer to strip him of his power. However, the ceremony failed, and while Tirion accepted his sentence of exile, he retained his paladin powers.</p>
+
     </div>
     <div class="maincontent">
       <h2 id="specializations">Paladin Specializations</h2>
-      <p class="sec3"> In World of Warcraft game play, the Paladin is considered to be a melee-oriented hybrid class, which is a class that fulfills more than one role. Paladins have various protective spells they extend to party or raid members, the ability to heal allies and oneself, and a unique system of seals and judgments for combat.The three available specializations are "Holy", "Protection" and "Retribution". The Holy Paladin specializes as a healer (acting as an armored cleric), the Protection Paladin takes the role of a damage-absorbing tank for a group, and the retribution specialization increases the Paladin's ability to do melee damage (representing a zealous crusader). </p>
+      <p> In World of Warcraft game play, the Paladin is considered to be a melee-oriented hybrid class, which is a class that fulfills more than one role. Paladins have various protective spells they extend to party or raid members, the ability to heal allies
+        and oneself, and a unique system of seals and judgments for combat.The three available specializations are "Holy", "Protection" and "Retribution". The Holy Paladin specializes as a healer (acting as an armored cleric), the Protection Paladin takes
+        the role of a damage-absorbing tank for a group, and the retribution specialization increases the Paladin's ability to do melee damage (representing a zealous crusader). </p>
       <ul>
-        <li class="speclist">Retribution paladins specialize in melee DPS and are able to increase their DPS by a considerable margin and fight several targets at a time with a good efficiency.</li> 
-        <li class="speclist">Protection paladins are excellent tanks. Through the use of a shield, and the wearing of plate armor, they can mitigate quite a bit of physical damage. They also excel at tanking multiple mobs at the same time through the use of <span class="abilities"><a href="https://www.wowhead.com/spell=53595/hammer-of-the-righteous" data-wowhead="spell=53595">[Hammer of the Righteous]</a></span>, <span class="abilities"><a href="https://www.wowhead.com/spell=210220/holy-wrath" data-wowhead="spell=210220">[Holy Wrath]</a></span>, and <span class="abilities"><a href="https://www.wowhead.com/spell=26573/consecration" data-wowhead="spell=26573">[Consecration]</a></span>.</li>
-        <li class="speclist">Through the holy specialization, paladins are able to empower their healing even further. The holy spec's most important talent, <span class="abilities"><a href="https://www.wowhead.com/spell=53563/beacon-of-light" data-wowhead="spell=53563">[Beacon of Light]</a></span>, allows a varying amount, depending on the Heal used, of a Paladin's heals to be mirrored to the affected friendly target.</li>
-        
+        <li class="speclist">Retribution paladins specialize in melee DPS and are able to increase their DPS by a considerable margin and fight several targets at a time with a good efficiency.</li>
+        <li class="speclist">Protection paladins are excellent tanks. Through the use of a shield, and the wearing of plate armor, they can mitigate quite a bit of physical damage. They also excel at tanking multiple mobs at the same time through the use of <span class="abilities"><a href="https://www.wowhead.com/spell=53595/hammer-of-the-righteous" data-wowhead="spell=53595">[Hammer of the Righteous]</a></span>,
+          <span class="abilities"><a href="https://www.wowhead.com/spell=210220/holy-wrath" data-wowhead="spell=210220">[Holy Wrath]</a></span>, and <span class="abilities"><a href="https://www.wowhead.com/spell=26573/consecration" data-wowhead="spell=26573">[Consecration]</a></span>.</li>
+        <li class="speclist">Through the holy specialization, paladins are able to empower their healing even further. The holy spec's most important talent, <span class="abilities"><a href="https://www.wowhead.com/spell=53563/beacon-of-light" data-wowhead="spell=53563">[Beacon of Light]</a></span>,
+          allows a varying amount, depending on the Heal used, of a Paladin's heals to be mirrored to the affected friendly target.</li>
+
       </ul>
-      
+
     </div>
     <div class="tabbed">
       <input name="tabbed" id="tabbed1" type="radio" checked>
@@ -141,55 +182,73 @@ The religious aspect harkens back to the historical Paladins' purported role as 
         <h3>
           <label for="tabbed1"><img class="specicon"                                        src="https://i.imgur.com/qSFM6SX.png" alt="retribution hammer">Retribution </label></h3>
         <div>
-          <img class="specpicture" src="https://i.imgur.com/V4E5QQ9.jpg" alt="Ashbringer Mograine">
+          <img class="spec-picture" src="https://i.imgur.com/V4E5QQ9.jpg" alt="Ashbringer Mograine">
           <h4><strong>A righteous crusader who judges and punishes opponents with weapons and Holy magic.</strong></h4>
-          <p class="spec">Retribution paladins favor slow two handed weapons, causing sudden damage spikes through both melee and spell crits. They favor single-target attacks like <span class="abilities"><a href="https://www.wowhead.com/spell=192219/crusader-strike" data-wowhead="spell=192219">[Crusader Strike]</a></span> and <span class="abilities"><a href="https://www.wowhead.com/spell=184575/blade-of-justice" data-wowhead="spell=184575">[Blade of Justice]</a></span> to build Holy Power, powering regular use of <span class="abilities"><a href="https://www.wowhead.com/spell=85256/templars-verdict" data-wowhead="spell=85256">[Templar's Verdict]</a></span>, or <span class="abilities"><a href="https://www.wowhead.com/spell=53385/divine-storm" data-wowhead="spell=53385">[Divine Storm]</a></span> for AoE. In PvP, Retribution paladins can be very effective off-healers, but have poor mobility. Retribution paladins can use powerful augments like <span class="abilities"><a href="https://www.wowhead.com/spell=31884/avenging-wrath" data-wowhead="spell=31884">[Avenging Wrath]</a></span> to buff their damage output.</p>
+          <p class="spec">Retribution paladins favor slow two handed weapons, causing sudden damage spikes through both melee and spell crits. They favor single-target attacks like <span class="abilities"><a href="https://www.wowhead.com/spell=192219/crusader-strike" data-wowhead="spell=192219">[Crusader Strike]</a></span>            and <span class="abilities"><a href="https://www.wowhead.com/spell=184575/blade-of-justice" data-wowhead="spell=184575">[Blade of Justice]</a></span> to build Holy Power, powering regular use of <span class="abilities"><a href="https://www.wowhead.com/spell=85256/templars-verdict" data-wowhead="spell=85256">[Templar's Verdict]</a></span>,
+            or <span class="abilities"><a href="https://www.wowhead.com/spell=53385/divine-storm" data-wowhead="spell=53385">[Divine Storm]</a></span> for AoE. In PvP, Retribution paladins can be very effective off-healers, but have poor mobility. Retribution
+            paladins can use powerful augments like <span class="abilities"><a href="https://www.wowhead.com/spell=31884/avenging-wrath" data-wowhead="spell=31884">[Avenging Wrath]</a></span> to buff their damage output.</p>
           <blockquote class="specquote">
-Blade with whom I have lived, blade with whom I now die, serve right and justice one last time, seek one last heart of evil, still one last life of pain, cut well old friend, and then farewell...</blockquote>
-          <p class="spec">To serve as instrument of the Light is to hold an unshakable faith. Oftentimes the most dedicated paladins become fanatical in their devotion, instruments of retribution against those who dare defy the laws of the divine. These paladins are vengeful guardians of the weak—crusaders judging and punishing the wicked. Their resolute conviction in the divine order of all things assures them that victory is inevitable—but they will fight to the end to ensure that the Light prevails. </p>
-          
+            Blade with whom I have lived, blade with whom I now die, serve right and justice one last time, seek one last heart of evil, still one last life of pain, cut well old friend, and then farewell...</blockquote>
+          <p class="spec">To serve as instrument of the Light is to hold an unshakable faith. Oftentimes the most dedicated paladins become fanatical in their devotion, instruments of retribution against those who dare defy the laws of the divine. These paladins are
+            vengeful guardians of the weak—crusaders judging and punishing the wicked. Their resolute conviction in the divine order of all things assures them that victory is inevitable—but they will fight to the end to ensure that the Light prevails.
+            </p>
+
         </div>
-        
+
       </section>
       <input name="tabbed" id="tabbed2" type="radio">
       <section>
         <h3>
           <label for="tabbed2"><img class="specicon"                                        src="https://i.imgur.com/gvkSgLk.png" alt="paladin shield">Protection</label></h3>
         <div>
-          <img class="specpicture" src="https://i.imgur.com/skozUvJ.jpg" alt="Paladin with Truthguard">
+          <img class="spec-picture" src="https://i.imgur.com/skozUvJ.jpg" alt="Paladin with Truthguard">
           <h4><strong>Uses Holy magic to shield herself and defend allies from attackers.</strong></h4>
-          <p class="spec">Through the Protection spec, paladins gain an increased ability to tank enemies. Paladins are especially well known for their ability to tank many enemies at once with rapid threat production. Strong stamina scaling, simple and very high threat generation and the superb <span class="abilities"><a href="https://www.wowhead.com/spell=31850/ardent-defender" data-wowhead="spell=31850">[Ardent Defender]</a></span> ability make paladins powerful tanks. With plate armor, shields and an array of powerful self-healing and defensive options, Protection paladins are often hard to defeat even without a healer by their side. </p>
+          <p class="spec">Through the Protection spec, paladins gain an increased ability to tank enemies. Paladins are especially well known for their ability to tank many enemies at once with rapid threat production. Strong stamina scaling, simple and very high threat
+            generation and the superb <span class="abilities"><a href="https://www.wowhead.com/spell=31850/ardent-defender" data-wowhead="spell=31850">[Ardent Defender]</a></span> ability make paladins powerful tanks. With plate armor, shields and an
+            array of powerful self-healing and defensive options, Protection paladins are often hard to defeat even without a healer by their side. </p>
           <blockquote class="specquote">
-Compromise where you can. Where you can't, don't. Even if everyone is telling you that something wrong is something right. When the mob and the press and the whole world tell you to move; Your job is to plant yourself like a tree beside the river of truth and tell the whole world: <br>
+            Compromise where you can. Where you can't, don't. Even if everyone is telling you that something wrong is something right. When the mob and the press and the whole world tell you to move; Your job is to plant yourself like a tree beside the river of truth
+            and tell the whole world: <br>
             <strong>“No, you move.”</strong>
-</blockquote>
-          <p class="spec"> The paladin’s tools of war lay bare their motivations. Clenched in one hand is the weapon, a deadly device for exacting righteous judgment. Locked in the other hand is the shield, a symbolic and literal barrier protecting good from evil. Stalwart and steadfast, these protectors are ardent defenders of the Light and all that it touches, and are rejuvenated by its radiance in return. So dedicated they are to their cause that they consecrate the very ground upon which they battle corruption.</p>
-          
+          </blockquote>
+          <p class="spec"> The paladin’s tools of war lay bare their motivations. Clenched in one hand is the weapon, a deadly device for exacting righteous judgment. Locked in the other hand is the shield, a symbolic and literal barrier protecting good from evil. Stalwart
+            and steadfast, these protectors are ardent defenders of the Light and all that it touches, and are rejuvenated by its radiance in return. So dedicated they are to their cause that they consecrate the very ground upon which they battle corruption.</p>
+
         </div>
-        
+
       </section>
       <input name="tabbed" id="tabbed3" type="radio">
-   <section>
-     <h3><label for="tabbed3"><img class="specicon" src="https://i.imgur.com/2EGaVmL.png" alt="holy bolt picture">Holy</label></h3>
-     <div id="holy">
-       <img class="specpicture" src="https://i.imgur.com/A6iv6Rw.jpg" alt="holy paladin with valanyr">
-       <h4><strong>Invokes the power of the Light to protect and to heal.</strong></h4>
-       <p class="spec">Holy paladins have devoted themselves to healing, with powerful specializations including <span class="abilities"><a href="https://www.wowhead.com/spell=53563/beacon-of-light" data-wowhead="spell=53563">[Beacon of Light]</a></span> and <span class="abilities"><a href="https://www.wowhead.com/spell=85222/light-of-dawn" data-wowhead="spell=85222">[Light of Dawn]</a></span>. With their plate armor, Holy paladins are some of the toughest healers in the game. When they need to deal damage, they have access to both ranged and melee Holy attacks like <span class="abilities"><a href="https://www.wowhead.com/spell=20473/holy-shock" data-wowhead="spell=20473">[Holy Shock]</a></span> and <span class="abilities"><a href="https://www.wowhead.com/spell=192219/crusader-strike" data-wowhead="spell=192219">[Crusader Strike]</a></span>. </p>
-       <blockquote class="specquote">
-The way of the Paladin is to seek to know that which truly is. The Paladin strives to learn her own inner nature and that of others. The Paladin does whatever needs to be done to bring light to the world. Not for glory, not for gain, the Paladin Becomes a Paladin because it is her Will.</blockquote>
-       <p class="spec"> Like priests who serve the Light, holy paladins are devout in their faith. After spending much of their lives in hallowed halls studying divine doctrine, those who pledge themselves to a holy order become beacons of the Light for their allies in conflict, taking up the heavy armor and weaponry of justice. Holding the unwavering belief that any battle waged to eradicate evil in the world is righteous, these paladins stands on the frontlines in service to all others dedicated to the cause. The truth and virtue of the Light imbues these sacred knights with the power to revitalize their comrades. If necessary, they even lay down their own lives to serve as a martyr for the greater good. </p>
-       
-     </div>
-     
+      <section>
+        <h3><label for="tabbed3"><img class="specicon" src="https://i.imgur.com/2EGaVmL.png" alt="holy bolt picture">Holy</label></h3>
+        <div id="holy">
+          <img class="spec-picture" src="https://i.imgur.com/A6iv6Rw.jpg" alt="holy paladin with valanyr">
+          <h4><strong>Invokes the power of the Light to protect and to heal.</strong></h4>
+          <p class="spec">Holy paladins have devoted themselves to healing, with powerful specializations including <span class="abilities"><a href="https://www.wowhead.com/spell=53563/beacon-of-light" data-wowhead="spell=53563">[Beacon of Light]</a></span> and
+            <span
+              class="abilities"><a href="https://www.wowhead.com/spell=85222/light-of-dawn" data-wowhead="spell=85222">[Light of Dawn]</a></span>. With their plate armor, Holy paladins are some of the toughest healers in the game. When they need to deal damage, they have
+              access to both ranged and melee Holy attacks like <span class="abilities"><a href="https://www.wowhead.com/spell=20473/holy-shock" data-wowhead="spell=20473">[Holy Shock]</a></span> and <span class="abilities"><a href="https://www.wowhead.com/spell=192219/crusader-strike" data-wowhead="spell=192219">[Crusader Strike]</a></span>.
+              </p>
+          <blockquote class="specquote">
+            The way of the Paladin is to seek to know that which truly is. The Paladin strives to learn her own inner nature and that of others. The Paladin does whatever needs to be done to bring light to the world. Not for glory, not for gain, the Paladin Becomes
+            a Paladin because it is her Will.</blockquote>
+          <p class="spec"> Like priests who serve the Light, holy paladins are devout in their faith. After spending much of their lives in hallowed halls studying divine doctrine, those who pledge themselves to a holy order become beacons of the Light for their allies
+            in conflict, taking up the heavy armor and weaponry of justice. Holding the unwavering belief that any battle waged to eradicate evil in the world is righteous, these paladins stands on the frontlines in service to all others dedicated to
+            the cause. The truth and virtue of the Light imbues these sacred knights with the power to revitalize their comrades. If necessary, they even lay down their own lives to serve as a martyr for the greater good. </p>
+
+        </div>
+
       </section>
-      
+
     </div>
-    <footer id="footer">
-      <p><small>World of Warcraft content and materials are trademarks and copyrights of Blizzard or its licensors. All rights reserved. This site is created for a personal project and is not affiliated with Blizzard.</small></p>
-        <p id="adress"> Contact information: You can either reach us by our <a href="#discord">Discord  </a> channel or you can send an e-mail <a href="ladylaurelin@hotmail.com">Here</a>. </p>
-        <p id="createdby"> Created by:<!-- Arya Pasinli --> Laurelin </p>
-        
-        </footer>
-    <!-- Phew, that took a while :) I really had more fun than I expected, wish I have started to learn this sooner. Cant believe how much I missed by not going into the source of a thing that I use every day, I now think about all the memeing opportunities that I have missed. Speaking of memes this seems like a fitting end: https://www.youtube.com/watch?v=b0hhXmDVTZM-->
-    </body>
+  </article>
+  <footer id="footer">
+    <p><small>World of Warcraft content and materials are trademarks and copyrights of Blizzard or its licensors. All rights reserved. This site is created for a personal project and is not affiliated with Blizzard.</small></p>
+    <p id="adress"> Contact information: You can either reach us by our <a href="#discord">Discord  </a> channel or you can send an e-mail <a href="ladylaurelin@hotmail.com">Here</a>. </p>
+    <p id="createdby"> Created by:
+      <!-- Arya Pasinli -->Laurelin </p>
+
+  </footer>
+  <!-- Phew, that took a while :) I really had more fun than I expected, wish I have started to learn this sooner. Cant believe how much I missed by not going into the source of a thing that I use every day, I now think about all the memeing opportunities that I have missed. Speaking of memes this seems like a fitting end: https://www.youtube.com/watch?v=b0hhXmDVTZM-->
+</body>
+
 </html>
