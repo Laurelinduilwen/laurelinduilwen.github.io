@@ -93,6 +93,7 @@ li.topbar:last-child {
   background-origin: content-box, padding-box;
   background-size: cover;
   background-position: right top;
+  box-sizing: border-box;
   padding: 1px;
   margin: -9px -11px -0px -11px;}
 
@@ -239,7 +240,7 @@ blockquote.specquote {float:right;
 width: 57%;}
 
 
-footer {
+#footer {
   margin: 2em -0.5em 0em 0em;
   padding: -1px;
   width: 101%;
@@ -251,3 +252,4 @@ footer {
 #adress {margin:1em 1em -0.7em 1em; color:beige; font-size:20px}
 
 .footerp1 {float:right; margin:-1em 1em 0.8em 1em;}
+
