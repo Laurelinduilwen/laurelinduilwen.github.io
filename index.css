@@ -168,7 +168,7 @@ header {
 
 aside {
   float: right;
-  margin: 1.2em 0em 0em 0em;
+  margin: 1.2em 0.4em 0em 0em;
   width: 19%;
   z-index: -3;
 }
@@ -197,9 +197,7 @@ aside {
 
 /*Wanted to give this transparency but *again* it breaks the stick topbar. Opacity with a negative z index works but breaks the connect button ¯\_(ツ)_/¯ edit: IT WORKS!!11  */
 
-table.stats,
-th,
-td {
+table.stats,th,td {
   border: 1px solid black;
   color: white;
   border-collapse: collapse;
@@ -297,7 +295,6 @@ tr.spectable:hover {
 }
 
 article {
-  float: left;
   margin: 0em 0em 0em 0em;
   width: 80%;
 }
@@ -357,5 +354,10 @@ blockquote.specquote {
 #createdby {
   float: right;
   margin: -1em 1em 0.8em 1em;
+}
+
+@media (hover:none) {
+  body {background-attachment: initial;
+  }
 }
 
