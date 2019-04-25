@@ -356,8 +356,32 @@ blockquote.specquote {
   margin: -1em 1em 0.8em 1em;
 }
 
-@media (hover:none) {
-  body {background-attachment: initial;
-  }
-}
+/* Trying to fix the display issues on my ipad after this*/
 
+@media (hover:none) {
+  body {
+    background-image: url("https://i.imgur.com/QxeYrIZ.png");
+    background-repeat: repeat;
+    background-color: black;
+    background-size: 100%;
+  }
+  table.stats,th,td{
+    font-size:14px;
+  }
+  .h2s{
+    margin: 9.15em 0em 0em 1.0em;
+    font-size: 27px;
+  }
+  article {
+    width: 75%;
+  }
+  aside{
+    width: 24%;
+  }
+  p.spec {
+  padding-left: 11.3em;
+} 
+  h4 {
+    margin: 2em 0em 2em 18em;
+  }
+/* edit: fixed most of the issues but cannot find a way to fix the background :( */
