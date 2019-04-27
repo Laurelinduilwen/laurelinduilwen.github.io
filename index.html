@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Hello There!.... Just as a little info at first, I created this while using Chrome in Windows 10 on a 1080p monitor, for some reason the imgur image links fail to load on safari on an ipad. This is how the page looks on my PC: https://i.imgur.com/kEGsJ1c.jpg.   -->
+<!--Hello There!.... Just as a little info at first, I created this while using Chrome in Windows 10 on a 1080p monitor, for some reason the imgur image links fail to load on safari on an ipad. This is how the page looks on my PC: https://i.imgur.com/kEGsJ1c.jpg. edit: ah well, I checked this pen from another computer and realized that imgur is blocking codepen and the only reason it worked for is because of the cache. hosting the images in a proper CDN now   -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project: The Light & How to Swint It</title>
   <link rel="stylesheet" type="text/css" href="index.css">
-  <!--Included this since I am also trying to host this over in my git @ https://laurelinduilwen.github.io/ -->
+  <!--Included this since I am also trying to host this over in github @ https://laurelinduilwen.github.io/ -->
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <script>
@@ -32,14 +32,14 @@
     <li class="topbar"><a href="https://i.imgur.com/SETtVmB.jpg">Forums </a></li>
     <li class="topbar"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Search</a></li>
     <li class="topbar"><a href="#footer">About</a></li>
-    <li class="topbar" style="float:right"><a href="#discord"> <img id="uther" src="https://i.imgur.com/u9nNnuJ.gif" alt="uther the lightbringer">Join our Discord!</a></li>
+    <li class="topbar" style="float:right"><a href="#discord"> <img id="uther" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321640/u9nNnuJ_pzjg5c.gif" alt="uther the lightbringer">Join our Discord!</a></li>
 
   </ul>
   <!--It took *enough* time to figure out how to properly make this sticky navigation bar -_- for some reason using <div>, <nav> or any other container other than <body> breaks the sticky property... I will get back to this later :( update: seems like this is how it is supposed to work, I am finally giving up  ¯\_(ツ)_/¯-->
   <aside>
     <div id="statstable">
       <h2 class="h2s"> Stat Priority</h2>
-      <img id="sidebarimage" src="https://i.imgur.com/gnTIRIw.jpg" alt="paladin riding a horse">
+      <img id="sidebarimage" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321914/sidebar_adjgra.jpg" alt="paladin riding a horse">
       <table class="stats">
         <thead>
           <tr>
@@ -180,9 +180,9 @@
       <input name="tabbed" id="tabbed1" type="radio" checked>
       <section>
         <h3>
-          <label for="tabbed1"><img class="specicon"                                        src="https://i.imgur.com/qSFM6SX.png" alt="retribution hammer">Retribution </label></h3>
+          <label for="tabbed1"><img class="specicon"                                        src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321914/ret_wzqhwk.png" alt="retribution hammer">Retribution </label></h3>
         <div>
-          <img class="spec-picture" src="https://i.imgur.com/V4E5QQ9.jpg" alt="Ashbringer Mograine">
+          <img class="spec-picture" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321914/ret_rthi1m.jpg" alt="Ashbringer Mograine">
           <h4><strong>A righteous crusader who judges and punishes opponents with weapons and Holy magic.</strong></h4>
           <p class="spec">Retribution paladins favor slow two handed weapons, causing sudden damage spikes through both melee and spell crits. They favor single-target attacks like <span class="abilities"><a href="https://www.wowhead.com/spell=192219/crusader-strike" data-wowhead="spell=192219">[Crusader Strike]</a></span>            and <span class="abilities"><a href="https://www.wowhead.com/spell=184575/blade-of-justice" data-wowhead="spell=184575">[Blade of Justice]</a></span> to build Holy Power, powering regular use of <span class="abilities"><a href="https://www.wowhead.com/spell=85256/templars-verdict" data-wowhead="spell=85256">[Templar's Verdict]</a></span>,
             or <span class="abilities"><a href="https://www.wowhead.com/spell=53385/divine-storm" data-wowhead="spell=53385">[Divine Storm]</a></span> for AoE. In PvP, Retribution paladins can be very effective off-healers, but have poor mobility. Retribution
@@ -198,9 +198,9 @@
       <input name="tabbed" id="tabbed2" type="radio">
       <section>
         <h3>
-          <label for="tabbed2"><img class="specicon"                                        src="https://i.imgur.com/gvkSgLk.png" alt="paladin shield">Protection</label></h3>
+          <label for="tabbed2"><img class="specicon" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321913/prot_gerqez.png" alt="paladin shield">Protection</label></h3>
         <div>
-          <img class="spec-picture" src="https://i.imgur.com/skozUvJ.jpg" alt="Paladin with Truthguard">
+          <img class="spec-picture" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321914/prot_ecxfko.jpg" alt="Paladin with Truthguard">
           <h4><strong>Uses Holy magic to shield herself and defend allies from attackers.</strong></h4>
           <p class="spec">Through the Protection spec, paladins gain an increased ability to tank enemies. Paladins are especially well known for their ability to tank many enemies at once with rapid threat production. Strong stamina scaling, simple and very high threat
             generation and the superb <span class="abilities"><a href="https://www.wowhead.com/spell=31850/ardent-defender" data-wowhead="spell=31850">[Ardent Defender]</a></span> ability make paladins powerful tanks. With plate armor, shields and an
@@ -218,9 +218,9 @@
       </section>
       <input name="tabbed" id="tabbed3" type="radio">
       <section>
-        <h3><label for="tabbed3"><img class="specicon" src="https://i.imgur.com/2EGaVmL.png" alt="holy bolt picture">Holy</label></h3>
+        <h3><label for="tabbed3"><img class="specicon" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321913/holy_blkybi.png" alt="holy bolt picture">Holy</label></h3>
         <div id="holy">
-          <img class="spec-picture" src="https://i.imgur.com/A6iv6Rw.jpg" alt="holy paladin with valanyr">
+          <img class="spec-picture" src="https://res.cloudinary.com/ladylaurelin/image/upload/v1556321913/holy_rluybr.jpg" alt="holy paladin with valanyr">
           <h4><strong>Invokes the power of the Light to protect and to heal.</strong></h4>
           <p class="spec">Holy paladins have devoted themselves to healing, with powerful specializations including <span class="abilities"><a href="https://www.wowhead.com/spell=53563/beacon-of-light" data-wowhead="spell=53563">[Beacon of Light]</a></span> and
             <span
