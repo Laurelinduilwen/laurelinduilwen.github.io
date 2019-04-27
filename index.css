@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://i.imgur.com/weqAcUf.jpg");
+  background-image: url("https://res.cloudinary.com/ladylaurelin/image/upload/v1556321438/background_v86sb5.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-origin: content-box, padding-box;
@@ -153,7 +153,7 @@ li.topbar:last-child {
 }
 
 header {
-  background-image: url("https://i.imgur.com/RZipbfW.jpg");
+  background-image: url("https://res.cloudinary.com/ladylaurelin/image/upload/v1556321438/title_sdugas.jpg");
   background-attachment: local;
   background-repeat: no-repeat;
   background-origin: content-box, padding-box;
@@ -323,8 +323,7 @@ article {
 }
 
 blockquote {
-  background: url(https://i.imgur.com/vljDZ6R.png) top center no-repeat,
-    url(https://i.imgur.com/ZT6wqT6.png) bottom center no-repeat;
+  background: url(https://res.cloudinary.com/ladylaurelin/image/upload/v1556321236/blocktop_fc0blm.png) top center no-repeat,url(https://res.cloudinary.com/ladylaurelin/image/upload/v1556321236/blockbottom_cgoaju.png) bottom center no-repeat;
   color: #eee8aa;
   font-style: italic;
   margin: 30px;
@@ -360,7 +359,7 @@ blockquote.specquote {
 
 @media (hover:none) {
   body {
-    background-image: url("https://i.imgur.com/QxeYrIZ.png");
+    background-image: url("https://res.cloudinary.com/ladylaurelin/image/upload/v1556321437/altbackground_gykjmo.png");
     background-repeat: repeat;
     background-color: black;
     background-size: auto;
@@ -380,8 +379,9 @@ blockquote.specquote {
   }
   p.spec {
   padding-left: 13em;
-} 
+  }
+  /*fixed most of the issues, provided a replacement background but cannot make it work :( edit: properly works while hosted in github, yay! */
   h4 {
     margin: 2em 0em 2em 18em;
   }
-/*fixed most of the issues, provided a replacement background but cannot make it work :( edit: properly works in github, yay! */
+}
